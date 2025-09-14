@@ -109,7 +109,7 @@ const VehicleDepreciationApp = () => {
             <div className="bg-white p-6 rounded-lg shadow-md mb-8">
                 {/* Depreciation Model Toggle */}
                 <div className="mb-6 text-center">
-                    <h1 className="block font-semibold text-gray-700 mb-3" style="display:inline-flex; margin-right:10px">
+                    <h1 className="block font-semibold text-gray-700 mb-3" style={{display: 'inline-flex', marginRight: '10px'}}>
                         Vehicle Depreciation & Loan Analysis
                     </h1>
                     <div className="inline-flex rounded-lg border border-gray-300 bg-gray-100 p-1">
