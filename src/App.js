@@ -104,17 +104,14 @@ const VehicleDepreciationApp = () => {
 
     return (
         <div className="p-6 max-w-7xl mx-auto bg-gray-50 min-h-screen">
-            <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-                Vehicle Depreciation & Loan Analysis
-            </h1>
 
             {/* Controls */}
             <div className="bg-white p-6 rounded-lg shadow-md mb-8">
                 {/* Depreciation Model Toggle */}
                 <div className="mb-6 text-center">
-                    <label className="block text-sm font-semibold text-gray-700 mb-3">
-                        Depreciation Model
-                    </label>
+                    <h1 className="block font-semibold text-gray-700 mb-3" style="display:inline-flex; margin-right:10px">
+                        Vehicle Depreciation & Loan Analysis
+                    </h1>
                     <div className="inline-flex rounded-lg border border-gray-300 bg-gray-100 p-1">
                         <button
                             type="button"
@@ -287,16 +284,16 @@ const VehicleDepreciationApp = () => {
                 </div>
 
                 {/* Debug Info */}
-                <div className="mt-4 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                    <div className="text-xs text-gray-700">
-                        <div><strong>DEBUG INFO:</strong></div>
-                        <div>Fleet Value: {formatCurrency(calculateData.fleetValue)}</div>
-                        <div>Total Loan: {formatCurrency(calculateData.totalLoan)}</div>
-                        <div>Monthly Rate: {((interestRate / 100 / 12) * 100).toFixed(4)}%</div>
-                        <div>Monthly Payment: {formatCurrency(calculateData.monthlyPayment)}</div>
-                        <div>Payment Per Vehicle: {formatCurrency(calculateData.paymentPerVehicle)}</div>
-                    </div>
-                </div>
+                {/*<div className="mt-4 p-4 bg-yellow-50 rounded-lg border border-yellow-200">*/}
+                {/*    <div className="text-xs text-gray-700">*/}
+                {/*        <div><strong>DEBUG INFO:</strong></div>*/}
+                {/*        <div>Fleet Value: {formatCurrency(calculateData.fleetValue)}</div>*/}
+                {/*        <div>Total Loan: {formatCurrency(calculateData.totalLoan)}</div>*/}
+                {/*        <div>Monthly Rate: {((interestRate / 100 / 12) * 100).toFixed(4)}%</div>*/}
+                {/*        <div>Monthly Payment: {formatCurrency(calculateData.monthlyPayment)}</div>*/}
+                {/*        <div>Payment Per Vehicle: {formatCurrency(calculateData.paymentPerVehicle)}</div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
 
             {/* Chart */}
