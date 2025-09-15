@@ -157,7 +157,7 @@ const VehicleDepreciationApp = () => {
                         </button>
                     </div>
                     {depreciationModel === 'heavyuse' && (
-                        <div className="text-xs text-gray-500 mt-1">
+                        <div className="text-xs text-gray-500 mt-1"  style={{display: 'inline-block', verticalAlignt: 'top'}}>
                             <div>First 6 months: {(depreciationRate * 2).toFixed(1)}%</div>
                             <div>Months 7-12: {(depreciationRate * 1.5).toFixed(1)}%</div>
                             <div>Months 13-24: {(depreciationRate * 1.2).toFixed(1)}%</div>
