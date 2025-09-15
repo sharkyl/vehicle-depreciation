@@ -156,6 +156,14 @@ const VehicleDepreciationApp = () => {
                             Heavy Use
                         </button>
                     </div>
+                    {depreciationModel === 'heavyuse' && (
+                        <div className="text-xs text-gray-500 mt-1">
+                            <div>First 6 months: {(depreciationRate * 2).toFixed(1)}%</div>
+                            <div>Months 7-12: {(depreciationRate * 1.5).toFixed(1)}%</div>
+                            <div>Months 13-24: {(depreciationRate * 1.2).toFixed(1)}%</div>
+                            <div>After 24 months: {depreciationRate.toFixed(1)}%</div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -218,14 +226,6 @@ const VehicleDepreciationApp = () => {
                             <span>{depreciationModel === 'annual' ? '5%' : '0.5%'}</span>
                             <span>{depreciationModel === 'annual' ? '25%' : '2.0%'}</span>
                         </div>
-                        {depreciationModel === 'heavyuse' && (
-                            <div className="text-xs text-gray-500 mt-1">
-                                <div>First 6 months: {(depreciationRate * 2).toFixed(1)}%</div>
-                                <div>Months 7-12: {(depreciationRate * 1.5).toFixed(1)}%</div>
-                                <div>Months 13-24: {(depreciationRate * 1.2).toFixed(1)}%</div>
-                                <div>After 24 months: {depreciationRate.toFixed(1)}%</div>
-                            </div>
-                        )}
                     </div>
 
                     {/* Loan Term */}
