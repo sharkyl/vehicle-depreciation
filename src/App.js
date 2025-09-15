@@ -195,7 +195,7 @@ const VehicleDepreciationApp = () => {
                         </label>
                         <input
                             type="range"
-                            min="45000"
+                            min="20000"
                             max="100000"
                             step="1000"
                             value={loanValue}
@@ -256,7 +256,7 @@ const VehicleDepreciationApp = () => {
                         <input
                             type="range"
                             min="5.0"
-                            max="8.0"
+                            max="10.0"
                             step="0.1"
                             value={interestRate}
                             onChange={(e) => setInterestRate(Number(e.target.value))}
