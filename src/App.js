@@ -203,7 +203,7 @@ const VehicleDepreciationApp = () => {
                             className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer slider"
                         />
                         <div className="flex justify-between text-xs text-gray-500">
-                            <span>$45k</span>
+                            <span>$20k</span>
                             <span>$100k</span>
                         </div>
                     </div>
@@ -264,7 +264,7 @@ const VehicleDepreciationApp = () => {
                         />
                         <div className="flex justify-between text-xs text-gray-500">
                             <span>5.0%</span>
-                            <span>8.0%</span>
+                            <span>10.0%</span>
                         </div>
                     </div>
                 </div>
