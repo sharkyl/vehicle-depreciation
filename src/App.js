@@ -369,7 +369,8 @@ const VehicleDepreciationApp = () => {
                         <div className="text-2xl font-bold text-red-600">
                             {formatCurrency(calculateData.data[12]?.vehicleValue || 0)}
                         </div>
-                        <div className="text-sm text-gray-600">{numVehicles === 1 ? 'Vehicle Value After 1 Year' : 'Fleet Value After 1 Year'}</div>
+                        <div
+                            className="text-sm text-gray-600">{numVehicles === 1 ? 'Vehicle Value After 1 Year' : 'Fleet Value After 1 Year'}</div>
                         {numVehicles > 1 && (
                             <div className="text-xs text-gray-500 mt-1">
                                 {formatCurrency((calculateData.data[12]?.vehicleValue || 0) / numVehicles)} per vehicle
@@ -383,7 +384,8 @@ const VehicleDepreciationApp = () => {
                         <div className="text-sm text-gray-600">Loan Balance at End of Term</div>
                         {numVehicles > 1 && (
                             <div className="text-xs text-gray-500 mt-1">
-                                {formatCurrency((calculateData.data[loanTerm]?.loanBalance || 0) / numVehicles)} per vehicle
+                                {formatCurrency((calculateData.data[loanTerm]?.loanBalance || 0) / numVehicles)} per
+                                vehicle
                             </div>
                         )}
                     </div>
@@ -399,15 +401,16 @@ const VehicleDepreciationApp = () => {
                         )}
                     </div>
                 </div>
-            </div>
-
-            <div className="mt-8 bg-white p-6 rounded-lg shadow-md" style={{textAlign:'center'}}>
-                <h3 className="text-lg font-bold text-gray-800 mb-4">This vehicle depreciation calculator is sponsored by <a href='https://www.bandago.com' style={{color:'darkblue'}}>Bandago</a> - we rent passenger vans!</h3>
+                <div style={{textAlign: 'center'}}>
+                    <h3 className="text-lg font-bold text-gray-800 mb-4">This vehicle depreciation calculator is sponsored
+                        by <a href='https://www.bandago.com' style={{color: 'darkblue'}}>Bandago</a> - we rent passenger
+                        vans!</h3>
+                </div>
             </div>
 
             <style jsx>{`
-        .slider::-webkit-slider-thumb {
-          appearance: none;
+                .slider::-webkit-slider-thumb {
+                    appearance: none;
           height: 20px;
           width: 20px;
           border-radius: 50%;
