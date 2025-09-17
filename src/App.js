@@ -401,6 +401,10 @@ const VehicleDepreciationApp = () => {
                 </div>
             </div>
 
+            <div className="mt-8 bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-4">This vehicle depreciation calculator is sponsored by <a href='https://www.bandago.com'>Bandago</a> - we rent passenger vans!</h3>
+            </div>
+
             <style jsx>{`
         .slider::-webkit-slider-thumb {
           appearance: none;
