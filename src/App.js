@@ -195,7 +195,7 @@ const VehicleDepreciationApp = () => {
                         </label>
                         <input
                             type="range"
-                            min="20000"
+                            min="1000"
                             max="100000"
                             step="1000"
                             value={loanValue}
@@ -203,7 +203,7 @@ const VehicleDepreciationApp = () => {
                             className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer slider"
                         />
                         <div className="flex justify-between text-xs text-gray-500">
-                            <span>$20k</span>
+                            <span>$1k</span>
                             <span>$100k</span>
                         </div>
                     </div>
